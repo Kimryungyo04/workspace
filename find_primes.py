@@ -48,7 +48,7 @@ def eratosthenes_sieve(n):
     prime_list[0] = prime_list[1] = False
     
     # 에라토스테네스의 체 알고리즘 적용
-    for i in range(2, int(n**0.5)+1): # ----> 왜 루트까지만 계산하는지 모르겠다
+    for i in range(2, int(n**0.5)+1): # ----> 왜 루트까지만 계산하는지 모르겠습니다
         if prime_list[i]:
             for j in range(i*i, n+1, i):
                 prime_list[j] = False
